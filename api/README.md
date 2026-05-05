@@ -1,73 +1,116 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+# BCM360 API
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+NestJS-Backend für die BCM360-Plattform. REST-API mit WebSocket-Unterstützung für die Durchführung und Auswertung von Krisenmanagement-Szenarien.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Vollständige Projektdokumentation: siehe [Root-README](../README.md).
 
-## Description
+---
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
+## Schnellstart
 
 ```bash
-$ npm install
+# Abhängigkeiten installieren
+npm install
+
+# Umgebungsvariablen konfigurieren
+cp .example.env .env
+# .env anpassen (Datenbank, Redis, MinIO, JWT-Secrets, etc.)
+
+# Entwicklungsserver starten (Hot Reload)
+npm run start:dev
 ```
 
-## Running the app
+---
+
+## Verfügbare Skripte
+
+### Entwicklung
+
+| Befehl | Beschreibung |
+|---|---|
+| `npm run start:dev` | Entwicklungsserver mit Hot Reload |
+| `npm start` | Einzel-Worker ohne Watch-Modus |
+
+### Produktion
+
+| Befehl | Beschreibung |
+|---|---|
+| `npm run build` | TypeScript zu JavaScript kompilieren |
+| `npm run start:prod` | Produktionsserver (Cluster-Modus) |
+| `npm run start:prod:db` | Produktionsserver + DB-Migrationen beim Start |
+| `npm run build:start` | Build + Migrationen + Start in einem Schritt |
+
+### Datenbank
+
+| Befehl | Beschreibung |
+|---|---|
+| `npm run db:migrate` | Ausstehende Migrationen ausführen |
+| `npm run db:seed` | Seed-Daten einspielen |
+| `npm run db:update` | Migrieren + Seeden |
+| `npm run db:update:constants` | Nur Konstanten-Seeds (Rollen, Berechtigungen) |
+
+### Tests
+
+| Befehl | Beschreibung |
+|---|---|
+| `npm run test` | Unit-Tests |
+| `npm run test:e2e` | End-to-End-Tests |
+| `npm run test:cov` | Test-Coverage-Bericht |
+
+### Code-Qualität
+
+| Befehl | Beschreibung |
+|---|---|
+| `npm run lint` | ESLint ausführen |
+| `npm run format` | Prettier-Formatierung anwenden |
+
+---
+
+## Modulübersicht
+
+| Modul | Pfad | Verantwortlichkeit |
+|---|---|---|
+| `AppModule` | `src/app/` | Root-Modul, globale Konfiguration |
+| `AuthModule` | `src/auth/` | JWT-Strategien, Guards |
+| `UsersModule` | `src/users/` | Benutzer-CRUD, Einladungen |
+| `CompanyModule` | `src/company/` | Unternehmensverwaltung |
+| `RolesModule` | `src/roles/` | RBAC-Rollenverwaltung |
+| `PermissionsModule` | `src/permissions/` | Berechtigungsdefinitionen |
+| `TwoFAModule` | `src/2fa/` | TOTP/OTP Zwei-Faktor-Auth |
+| `CoursesModule` | `src/courses/` | Szenarien & Tags |
+| `CourseProgressModule` | `src/course-progress/` | Sitzungen, Teilnehmer, WebSocket-Gateway |
+| `CachingModule` | `src/caching/` | Redis-Caching-Services |
+| `DatabaseModule` | `src/database/` | Sequelize-Konfiguration |
+| `FileModule` | `src/file/` | MinIO-Datei-Upload/-Löschung |
+| `MailModule` | `src/mail/` | Transaktionale E-Mails (Mailjet) |
+| `EventHistoryModule` | `src/event-history/` | Audit-Logging |
+| `TokensModule` | `src/tokens/` | Einladungs- & Reset-Tokens |
+| `FeaturesModule` | `src/features/` | Feature-Flags |
+| `ConfigurationModule` | `src/configuration/` | Laufzeit-App-Konfiguration |
+| `HealthModule` | `src/health/` | Kubernetes-Readiness-Probe |
+| `ViewEngineModule` | `src/view-engine/` | Handlebars-E-Mail-Templates |
+
+---
+
+## Datenbankmigrationen
+
+Migrationen liegen unter `migrations/` und werden mit der Sequelize CLI verwaltet.
 
 ```bash
-# development
-$ npm run start
+# Neue Migration erstellen
+npx sequelize-cli migration:create --name beschreibung
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+# Neuen Seeder erstellen
+npx sequelize-cli seed:generate --name beschreibung
 ```
 
-## Test
+Konfiguration: `migrations/config.js` (liest aus Umgebungsvariablen).
 
-```bash
-# unit tests
-$ npm run test
+---
 
-# e2e tests
-$ npm run test:e2e
+## Ports
 
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+| Port | Dienst |
+|---|---|
+| `3000` | HTTP-API + WebSocket |
+| `4001` | Prometheus-Metriken (nur Master-Prozess) |

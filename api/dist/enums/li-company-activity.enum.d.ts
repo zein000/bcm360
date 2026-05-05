@@ -1,0 +1,28 @@
+export declare enum LiCompanyActivityType {
+    LIKE = "LIKE",
+    COMMENT = "COMMENT",
+    VISIT = "VISIT",
+    COMPANY_VISIT = "COMPANY_VISIT",
+    COMPANY_FOLLOWER = "COMPANY_FOLLOWER"
+}
+export declare enum LiCompanyActivityScrapeStatus {
+    DRAFT = "DRAFT",
+    IN_PROGRESS = "IN_PROGRESS",
+    DONE = "DONE"
+}
+export declare enum LiCompanyActivityResultScrapeStatus {
+    DRAFT = "DRAFT",
+    PUBLIC_PROFILE = "PUBLIC_PROFILE",
+    COMPANY_PROFILE = "COMPANY_PROFILE",
+    RETRY_COMPANY_PROFILE = "RETRY_COMPANY_PROFILE",
+    RETRY_PUBLIC_PROFILE = "RETRY_PUBLIC_PROFILE",
+    INVALID = "INVALID",
+    TRIGGERED = "TRIGGERED",
+    IN_PROGRESS = "IN_PROGRESS",
+    SCRAPED = "SCRAPED",
+    ERROR = "ERROR",
+    WAITING = "WAITING",
+    APOLLO_ENRICHED = "APOLLO_ENRICHED",
+    APOLLO_PERSON_ENRICHED = "APOLLO_PERSON_ENRICHED",
+    DONE = "DONE"
+}

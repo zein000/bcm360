@@ -1,0 +1,1 @@
+{"version":3,"file":"company.enum.js","sourceRoot":"/","sources":["enums/company.enum.ts"],"names":[],"mappings":";;;AAAA,IAAY,eAGX;AAHD,WAAY,eAAe;IAC1B,sCAAmB,CAAA;IACnB,oCAAiB,CAAA;AAClB,CAAC,EAHW,eAAe,+BAAf,eAAe,QAG1B","sourcesContent":["export enum YearlyOrMonthly {\r\n\tMONTHLY = \"MONTHLY\",\r\n\tYEARLY = \"YEARLY\",\r\n}\r\n"]}

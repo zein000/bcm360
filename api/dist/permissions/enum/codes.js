@@ -1,0 +1,38 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PermissionCodes = void 0;
+var PermissionCodes;
+(function (PermissionCodes) {
+    PermissionCodes["CREATE_ROLE"] = "CREATE_ROLE";
+    PermissionCodes["READ_ROLES"] = "READ_ROLES";
+    PermissionCodes["UPDATE_ROLE"] = "UPDATE_ROLE";
+    PermissionCodes["DELETE_ROLE"] = "DELETE_ROLE";
+    PermissionCodes["INVITE_USER"] = "INVITE_USER";
+    PermissionCodes["GET_USER"] = "GET_USER";
+    PermissionCodes["GET_ME"] = "GET_ME";
+    PermissionCodes["DELETE_USER"] = "DELETE_USER";
+    PermissionCodes["CHANGE_PASSWORD"] = "CHANGE_PASSWORD";
+    PermissionCodes["UPDATE_ME"] = "UPDATE_ME";
+    PermissionCodes["UPDATE_USER"] = "UPDATE_USER";
+    PermissionCodes["UPDATE_USER_ROLE"] = "UPDATE_USER_ROLE";
+    PermissionCodes["GENERATE_2FA"] = "GENERATE_2FA";
+    PermissionCodes["GET_PERMISSION"] = "GET_PERMISSION";
+    PermissionCodes["UPDATE_PERMISSION"] = "UPDATE_PERMISSION";
+    PermissionCodes["MANAGE_CONFIGURATION"] = "MANAGE_CONFIGURATION";
+    PermissionCodes["BLACKLIST_JWT"] = "BLACKLIST_JWT";
+    PermissionCodes["LOGOUT"] = "LOGOUT";
+    PermissionCodes["DISABLE_2FA"] = "DISABLE_2FA";
+    PermissionCodes["VERIFY_2FA"] = "VERIFY_2FA";
+    PermissionCodes["UPLOAD_FILES"] = "UPLOAD_FILES";
+    PermissionCodes["COOKIE"] = "COOKIE";
+    PermissionCodes["DESKTOP"] = "DESKTOP";
+    PermissionCodes["COMPANY"] = "COMPANY";
+    PermissionCodes["COURSES"] = "COURSES";
+    PermissionCodes["MANAGE_COURSES"] = "MANAGE_COURSES";
+    PermissionCodes["GLOBAL_ADMIN"] = "GLOBAL_ADMIN";
+    PermissionCodes["ADMIN"] = "ADMIN";
+    PermissionCodes["USER"] = "USER";
+    PermissionCodes["PARTICIPANT"] = "PARTICIPANT";
+    PermissionCodes["PROTOCOL_WRITER"] = "PROTOCOL_WRITER";
+})(PermissionCodes || (exports.PermissionCodes = PermissionCodes = {}));
+//# sourceMappingURL=codes.js.map

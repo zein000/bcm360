@@ -1,0 +1,35 @@
+import { ConfigType } from "@nestjs/config";
+import { BaseResponseDTO } from "../common/dto/base-response.dto";
+import invitationConfig from "./config/token.config";
+import User from "../users/models/user.model";
+import { UsersService } from "../users/users.service";
+import { ValidateTokenResponseDTO } from "./dto/validate-token-response.dto";
+import { ETokenPurpose } from "./enums/token-purpose.enum";
+import { ETokenStatus } from "./enums/token-status.enum";
+import ChangeRequest from "./models/change-request.model";
+import Token from "./models/token.model";
+import { ChangeRequestRepository } from "./repositories/change-request.repository";
+import { TokenRepository } from "./repositories/token.repository";
+export declare class TokensService {
+    private readonly tokenRepository;
+    private readonly changeRequestRepo;
+    private readonly usersService;
+    private config;
+    private readonly logger;
+    constructor(tokenRepository: TokenRepository, changeRequestRepo: ChangeRequestRepository, usersService: UsersService, config: ConfigType<typeof invitationConfig>);
+    validateToken(token: string): Promise<ValidateTokenResponseDTO>;
+    resend(token: string): Promise<BaseResponseDTO<null>>;
+    createToken(userRecord: User, purpose: ETokenPurpose, token?: string): Promise<Token>;
+    createTokenWithChangeRequest(userRecord: User, purpose: ETokenPurpose, token: string, newEmail: string): Promise<Token>;
+    findToken(token: string): Promise<Token>;
+    findTokenWithPurpose(token: string, purpose: ETokenPurpose): Promise<Token>;
+    findTokenWithChangeRequest(token: string, purpose: ETokenPurpose): Promise<Token>;
+    getTokenStatus(token: Token): Promise<ETokenStatus>;
+    markAsUsed(token: Token): Promise<[affectedCount: number]>;
+    markChangeRequestAsAccepted(changeRequest: ChangeRequest): Promise<[affectedCount: number]>;
+    private isOlderToken;
+    private isUsed;
+    private isExpired;
+    private getTokenCompareDate;
+    private getExpiration;
+}

@@ -1,0 +1,8 @@
+{
+	"extends": ["@browserbite-io/eslint-config"],
+	"ignorePatterns": ["*.svg", "*.png", "*.css"],
+	// allow console.log
+	"rules": {
+		"no-console": "off"
+	}
+}

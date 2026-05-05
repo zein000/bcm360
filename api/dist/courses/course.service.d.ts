@@ -1,0 +1,35 @@
+import User from "src/users/models/user.model";
+import { UserInfoCachingService } from "src/caching/services/user-info-caching.service";
+import { PageDTO, PageOptionsDTO } from "src/common/dto";
+import { CourseAdminInfoDTO } from "./dto/course-admin-info.dto";
+import Course from "./models/course.model";
+import { CourseRepository } from "./repositories/course.repository";
+import { FileService } from "src/file/file.service";
+import CourseFile from "./models/course-file.model";
+import { CourseFileInfoDTO } from "./dto/course-file-info.dto";
+import { FileAssignment } from "./enums/FileAssignment.enum";
+import CourseTag from "./models/course-tag.model";
+import { CourseTagInfoDTO } from "./dto/course-tag-info.dto";
+export declare class CourseService {
+    private readonly model;
+    private readonly courseFileModel;
+    private readonly courseTag;
+    private readonly userInfoCachingService;
+    private readonly courseRepository;
+    private readonly fileService;
+    private readonly logger;
+    constructor(model: typeof Course, courseFileModel: typeof CourseFile, courseTag: typeof CourseTag, userInfoCachingService: UserInfoCachingService, courseRepository: CourseRepository, fileService: FileService);
+    handleCron(): Promise<void>;
+    create(data: Partial<Course>, user: User): Promise<CourseAdminInfoDTO>;
+    updateAsAdmin(id: number, data: Partial<Course>, user: User): Promise<number>;
+    update(data: Partial<Course>, user: User): Promise<number>;
+    addTagIfNotExist(tagName: string, user: User): Promise<CourseTagInfoDTO>;
+    findAllTags(user: User): Promise<CourseTagInfoDTO[]>;
+    findOne(id: number): Promise<CourseAdminInfoDTO>;
+    findAllRelatedCourses(id: number, user: User): Promise<CourseAdminInfoDTO[]>;
+    findAll(pageOptions: PageOptionsDTO, user: User): Promise<PageDTO<CourseAdminInfoDTO>>;
+    delete(id: number, user: User): Promise<number>;
+    uploadCourseFiles(files: Express.Multer.File[], fileAssignment?: FileAssignment): Promise<CourseFileInfoDTO[]>;
+    deleteCourseFile(fullFilePath: string): Promise<void>;
+    handleFilesDeleting(courseId: number | null, safeDelete?: boolean): Promise<void>;
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"page-meta-dto-parameters.interface.js","sourceRoot":"/","sources":["common/interfaces/page-meta-dto-parameters.interface.ts"],"names":[],"mappings":"","sourcesContent":["import { PageOptionsDTO } from \"../dto\";\r\n\r\nexport interface PageMetaParametersDTO {\r\n\tpageOptions: PageOptionsDTO;\r\n\titemCount: number;\r\n}\r\n"]}

@@ -1,0 +1,19 @@
+export declare enum EmploymentType {
+    FULLTIME = "FULLTIME",
+    PARTTIME = "PARTTIME",
+    CONTRACTOR = "CONTRACTOR",
+    TEMPORARY = "TEMPORARY",
+    VOLUNTEER = "VOLUNTEER",
+    INTERN = "INTERN",
+    OTHER = "OTHER"
+}
+export declare enum PersonSource {
+    OFFER = "OFFER",
+    SCRAPING = "SCRAPING"
+}
+export declare enum JobScrapeType {
+    GET_INFO_AT = "GET_INFO_AT",
+    GET_ENRICHMENT = "GET_ENRICHMENT",
+    GET_MANAGING_DIRECTOR = "GET_MANAGING_DIRECTOR",
+    GET_PERSON_FROM_OFFER = "GET_PERSON_FROM_OFFER"
+}

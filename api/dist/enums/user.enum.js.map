@@ -1,0 +1,1 @@
+{"version":3,"file":"user.enum.js","sourceRoot":"/","sources":["enums/user.enum.ts"],"names":[],"mappings":";;;AAAA,IAAY,YAGX;AAHD,WAAY,YAAY;IACvB,yBAAS,CAAA;IACT,yBAAS,CAAA;AACV,CAAC,EAHW,YAAY,4BAAZ,YAAY,QAGvB","sourcesContent":["export enum UserLanguage {\r\n\tEN = \"EN\",\r\n\tDE = \"DE\",\r\n}\r\n"]}

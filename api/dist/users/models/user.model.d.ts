@@ -1,0 +1,37 @@
+import { Model } from "sequelize-typescript";
+import Role from "src/roles/models/role.model";
+import Company from "src/company/models/company.model";
+import { UserLanguage } from "src/enums/user.enum";
+import { UserStatus } from "src/enums/user-status.enum";
+import Token from "src/tokens/models/token.model";
+import CourseProgress from "src/course-progress/models/course-progress.model";
+export default class User extends Model {
+    private readonly logger;
+    id: number;
+    email: string;
+    password: string;
+    roleId?: number;
+    role?: Role;
+    firstName: string;
+    lastName: string;
+    userLanguage: UserLanguage;
+    twoFactorAuthSecret: string;
+    linkedinUrl: string;
+    is2FAEnabled: boolean;
+    isBlocked: boolean;
+    autoAccept: boolean;
+    companyId?: number;
+    company?: Company;
+    tokens?: Token[];
+    courseProgresses?: CourseProgress[];
+    apiKey: string;
+    status: UserStatus;
+    deletedById?: number;
+    deletedBy?: User;
+    updatedAt: Date;
+    createdAt: Date;
+    deletedAt: Date;
+    checkPassword(passwordToCheck: string): Promise<boolean>;
+    private isExpired;
+    private getTokenCompareDate;
+}

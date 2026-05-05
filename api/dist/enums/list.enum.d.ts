@@ -1,0 +1,145 @@
+export declare enum ListConnectType {
+    EMAIL = "EMAIL",
+    LINKEDIN = "LINKEDIN",
+    BOTH = "BOTH"
+}
+export declare enum ListProcessingStatus {
+    IDLE = "IDLE",
+    ERROR = "ERROR",
+    PROCESSING = "PROCESSING",
+    DESKTOP_APP = "DESKTOP_APP",
+    API_WAITING = "API_WAITING",
+    WAITING = "WAITING",
+    DONE = "DONE"
+}
+export declare enum ListStatus {
+    PAUSED = "PAUSED",
+    ACTIVE = "ACTIVE",
+    ERROR = "ERROR"
+}
+export declare enum ListItemType {
+    SOURCE = "SOURCE",
+    FILTER = "FILTER"
+}
+export declare enum SourceType {
+    APOLLO = "APOLLO",
+    LINKEDIN_EVENTS = "LINKEDIN_EVENTS",
+    NORTHDATA = "NORTHDATA",
+    CUSTOM_EVENTS = "CUSTOM_EVENTS"
+}
+export declare enum SearchBase {
+    SOURCE = "SOURCE",
+    PERSON = "PERSON",
+    COMPANY = "COMPANY"
+}
+export declare enum UpdateType {
+    SOURCE = "SOURCE",
+    SCORE = "SCORE",
+    ACCOUNT_FILTER = "ACCOUNT_FILTER",
+    LEAD_FILTER = "LEAD_FILTER",
+    ENRICHMENTS = "ENRICHMENTS",
+    CAMPAIGNS = "CAMPAIGNS",
+    SETTINGS = "SETTINGS",
+    STATUS = "STATUS",
+    CUSTOM_COLUMN = "CUSTOM_COLUMN"
+}
+export declare enum InclusionStatus {
+    ADDED = "ADDED",
+    MAYBE = "MAYBE",
+    EXCLUDED = "EXCLUDED",
+    MANUALLY_EXCLUDED = "MANUALLY_EXCLUDED",
+    BLACKLIST = "BLACKLIST",
+    SAVED_FOR_LATER = "SAVED_FOR_LATER"
+}
+export declare enum InclusionFilterStatus {
+    ADDED = "ADDED",
+    EXCLUDED = "EXCLUDED",
+    MAYBE = "MAYBE",
+    MANUALLY_EXCLUDED = "MANUALLY_EXCLUDED",
+    BOTH = "BOTH",
+    BLACKLIST = "BLACKLIST",
+    SAVED_FOR_LATER = "SAVED_FOR_LATER"
+}
+export declare enum AssignStatus {
+    DRAFT = "DRAFT",
+    ASSIGNING = "ASSIGNING",
+    ASSIGNED = "ASSIGNED",
+    RUNNING = "RUNNING",
+    BLACKLIST = "BLACKLIST",
+    NOT_NOW = "NOT_NOW",
+    NO_REPLY = "NO_REPLY",
+    REPLIES = "REPLIES",
+    TO_BE_NURTURED = "TO_BE_NURTURED",
+    DO_NOT_CONTACT = "DO_NOT_CONTACT",
+    ENDED = "ENDED",
+    PAUSED = "PAUSED"
+}
+export declare enum ListSourceType {
+    PROSPECT_SEARCH = "PROSPECT_SEARCH",
+    LI_EVENTS = "LI_EVENTS",
+    LI_PEOPLE = "LI_PEOPLE",
+    LI_COMPANY_ACTIVITY = "LI_COMPANY_ACTIVITY",
+    LI_PROFILE_VISITS = "LI_PROFILE_VISITS",
+    LINKEDIN_PROFILE_POSTS = "LINKEDIN_PROFILE_POSTS",
+    LINKEDIN_PROFILE_COMMENTS = "LINKEDIN_PROFILE_COMMENTS",
+    LINKEDIN_PROFILE_LIKES_TO_POST = "LINKEDIN_PROFILE_LIKES_TO_POST",
+    LINKEDIN_PROFILE_LIKES_TO_COMMENT = "LINKEDIN_PROFILE_LIKES_TO_COMMENT",
+    LINKEDIN_PROFILE_COMMENTS_TO_POST = "LINKEDIN_PROFILE_COMMENTS_TO_POST",
+    LI_PROFILE = "LI_PROFILE",
+    CUSTOM_EVENTS = "CUSTOM_EVENTS",
+    CSV_ENRICHMENTS = "CSV_ENRICHMENTS",
+    JOBS = "JOBS",
+    MAPS = "MAPS",
+    LI_POST = "LI_POST"
+}
+export declare enum ListType {
+    ONCE = "ONCE",
+    ON_GOING = "ON_GOING"
+}
+export declare enum ListAction {
+    GENERAL = "GENERAL",
+    ADDED = "ADDED",
+    EXCLUDED = "EXCLUDED"
+}
+export declare enum CustomColumnTypes {
+    TEXT = "TEXT",
+    NUMBER = "NUMBER",
+    BOOLEAN = "BOOLEAN",
+    LINK = "LINK",
+    AI_PROMPT = "AI_PROMPT",
+    GOOGLE_NEWS = "GOOGLE_NEWS",
+    TECHNOLOGY = "TECHNOLOGY",
+    DEPARTMENT_SIZE = "DEPARTMENT_SIZE",
+    LINKEDIN_POST = "LINKEDIN_POST",
+    RANDOM_VALUE = "RANDOM_VALUE",
+    JOB_OFFER = "JOB_OFFER"
+}
+export declare enum CustomColumnFrequency {
+    ONCE = "ONCE",
+    WEEKLY = "WEEKLY",
+    MONTHLY = "MONTHLY",
+    QUATERLY = "QUATERLY",
+    HALFYEARLY = "HALFYEARLY",
+    YEARLY = "YEARLY"
+}
+export declare enum AiApplyType {
+    NONE = "NONE",
+    ALL = "ALL",
+    FIRST_10 = "FIRST_10"
+}
+export declare enum ResponseStatus {
+    DRAFT = "DRAFT",
+    INTERESTED = "INTERESTED",
+    NOT_INTERESTED = "NOT_INTERESTED",
+    SENT = "SENT",
+    OPENED = "OPENED",
+    CLICKED = "CLICKED",
+    REPLIED = "REPLIED",
+    BOUNCED = "BOUNCED",
+    UNSUBSCRIBED = "UNSUBSCRIBED",
+    LINKEDIN_VISIT = "LINKEDIN_VISIT",
+    LINKEDIN_INVITED = "LINKEDIN_INVITED",
+    LINKEDIN_INVITE_ACCEPTED = "LINKEDIN_INVITE_ACCEPTED",
+    WRONG_PERSON = "WRONG_PERSON",
+    NOT_NOW = "NOT_NOW"
+}

@@ -1,0 +1,32 @@
+export declare enum LiPostSort {
+    DATE_POSTED = "date_posted",
+    RELEVANCE = "relevance"
+}
+export declare enum LiPostContentType {
+    PHOTOS = "photos",
+    VIDEOS = "videos",
+    LIVE_VIDEOS = "liveVideos",
+    COLLABORATIVE_ARTICLES = "collaborativeArticles",
+    DOCUMENTS = "documents"
+}
+export declare enum LiPostResultStatus {
+    DRAFT = "DRAFT",
+    PUBLIC_PROFILE = "PUBLIC_PROFILE",
+    COMPANY_PROFILE = "COMPANY_PROFILE",
+    RETRY_COMPANY_PROFILE = "RETRY_COMPANY_PROFILE",
+    RETRY_PUBLIC_PROFILE = "RETRY_PUBLIC_PROFILE",
+    INVALID = "INVALID",
+    TRIGGERED = "TRIGGERED",
+    IN_PROGRESS = "IN_PROGRESS",
+    SCRAPED = "SCRAPED",
+    ERROR = "ERROR",
+    WAITING = "WAITING",
+    APOLLO_ENRICHED = "APOLLO_ENRICHED",
+    APOLLO_PERSON_ENRICHED = "APOLLO_PERSON_ENRICHED",
+    DONE = "DONE",
+    PERSON_FINDING = "PERSON_FINDING"
+}
+export declare enum TimeType {
+    PERIOD = "PERIOD",
+    FROM_TO = "FROM_TO"
+}

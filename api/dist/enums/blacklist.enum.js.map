@@ -1,0 +1,1 @@
+{"version":3,"file":"blacklist.enum.js","sourceRoot":"/","sources":["enums/blacklist.enum.ts"],"names":[],"mappings":";;;AAAA,IAAY,aAGX;AAHD,WAAY,aAAa;IACxB,oCAAmB,CAAA;IACnB,kCAAiB,CAAA;AAClB,CAAC,EAHW,aAAa,6BAAb,aAAa,QAGxB","sourcesContent":["export enum BlacklistType {\r\n\tBLOCKED = \"BLOCKED\",\r\n\tMARKED = \"MARKED\",\r\n}\r\n"]}

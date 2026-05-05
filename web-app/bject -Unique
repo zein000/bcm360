@@ -1,0 +1,40 @@
+[33m23266ac[m[33m ([m[1;31morigin/json-editor[m[33m, [m[1;32mjson-editor[m[33m)[m Merge remote-tracking branch 'origin/json-editor' into json-editor
+[33m63f6e2f[m courseprogress
+[33m1ad30a4[m hier kann man audio spielen
+[33m223f69e[m[33m ([m[1;32mfür-jonas[m[33m)[m Merge remote-tracking branch 'origin/für-jonas' into für-jonas
+[33md158831[m[33m ([m[1;32mfeature/pin-button[m[33m, [m[1;32mfeature/SocketAnbindung[m[33m)[m Merge branch 'feature/pin-button' into für-jonas
+[33m4ebb2a8[m hier nimm jason editor
+[33m64b0162[m dession eingebaut
+[33me28b842[m timedlayed content wird nicht mehr in content feld angzeigt auch autoplay content nicht mehr
+[33mc5f2a8d[m der text mit spoilershow ist entfernt worden
+[33mf45242f[m[33m ([m[1;31morigin/breit-für-aufnahme[m[33m, [m[1;32mbreit-für-aufnahme[m[33m)[m config
+[33me4177f4[m probiere es mal bitte
+[33md8a4d3d[m layout müssen angepasst werden
+[33m7360983[m neue optionen
+[33m5b84f5a[m Füge autoLayout.ts hinzu
+[33m524adb8[m sdycxvds
+[33m9d4e0c6[m[33m ([m[1;32mupload-funktion[m[33m)[m Merge branch 'breit-für-aufnahme' into upload-funktion
+[33m033e853[m conformation bug fixx und noch start fix
+[33mbc9be19[m ups vergessen
+[33m323634c[m die bugs sind fixed und von zabih und Fix'it-Felix
+[33mdb753f5[m neue option bei graph hinzügefügt zwar alle edges sehen glesich aus selbst beim einfügen und option entscheidung ausbelden auf edges
+[33mdfbdf44[m courseInprogress angepasst
+[33mcd2edda[m nach merge
+[33m854a4e9[m Merge branch 'json-editor' into upload-funktion
+[33m706f23b[m conformation anpassung
+[33m8057e9f[m Remove .idea from tracking and ignore it
+[33mea00c1c[m Add modified files and config updates
+[33mfe9b290[m courselnprogress anpassung
+[33me2064b4[m[33m ([m[1;32mbugfixes[m[33m)[m media wwird hetzt korrekt an bestimmten nodes angezeigt in dem content feld
+[33mde8c4e0[m sdadf
+[33mc98d56c[m die nodes können jetzt verschoben werden.
+[33m339e348[m neue design eingebaut, problem es wird weiterhin automatisch alles positzioniert
+[33m887a24b[m media uploads
+[33m9754544[m die edges können jetzt automatisch gestzt werden
+[33m6ce1ef8[m änderung
+[33m5c36df0[m alles wird gespeichert und new node kann erstellt werden, bin dabei die dession einzubauen
+[33mdbd28b9[m Merge remote-tracking branch 'origin/json-editor' into json-editor
+[33mdc8ace8[m speichern von scenario bei update geht es wieder
+[33mafe67ca[m Merge remote-tracking branch 'origin/json-editor' into json-editor
+[33m9f48b26[m der content feld bleibt unverändert
+[33m1ad6e60[m costumjasonEditor.tsx angepasst

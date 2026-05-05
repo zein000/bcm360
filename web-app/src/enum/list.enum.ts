@@ -1,0 +1,196 @@
+export enum ListConnectType {
+	EMAIL = "EMAIL",
+	LINKEDIN = "LINKEDIN",
+	BOTH = "BOTH",
+}
+
+export enum ListStatus {
+	PAUSED = "PAUSED",
+	ACTIVE = "ACTIVE",
+	ERROR = "ERROR",
+}
+
+export enum ListRunningStatus {
+	PAUSED = "PAUSED",
+	ACTIVE = "ACTIVE",
+	ALL = "ALL",
+}
+
+export enum ArchiveStatus {
+	ARCHIVED = "ARCHIVED",
+	NOT_ARCHIVED = "NOT_ARCHIVED",
+}
+
+export enum ListItemType {
+	SOURCE = "SOURCE",
+	FILTER = "FILTER",
+}
+
+export enum SourceType {
+	APOLLO = "APOLLO",
+	LINKEDIN_EVENTS = "LINKEDIN_EVENTS",
+	NORTHDATA = "NORTHDATA",
+	CUSTOM_EVENTS = "CUSTOM_EVENTS",
+}
+
+export enum SearchBase {
+	PERSON = "PERSON",
+	COMPANY = "COMPANY",
+	SOURCE = "SOURCE",
+}
+
+export enum UpdateType {
+	SOURCE = "SOURCE",
+	SCORE = "SCORE",
+	ACCOUNT_FILTER = "ACCOUNT_FILTER",
+	LEAD_FILTER = "LEAD_FILTER",
+	ENRICHMENTS = "ENRICHMENTS",
+	CAMPAIGNS = "CAMPAIGNS",
+	SETTINGS = "SETTINGS",
+	STATUS = "STATUS",
+	CUSTOM_COLUMN = "CUSTOM_COLUMN",
+}
+
+export enum InclusionStatus {
+	ADDED = "ADDED",
+	MAYBE = "MAYBE",
+	EXCLUDED = "EXCLUDED",
+	MANUALLY_EXCLUDED = "MANUALLY_EXCLUDED",
+	BLACKLIST = "BLACKLIST",
+	SAVED_FOR_LATER = "SAVED_FOR_LATER",
+}
+
+export enum InclusionFilterStatus {
+	ADDED = "ADDED",
+	EXCLUDED = "EXCLUDED",
+	MANUALLY_EXCLUDED = "MANUALLY_EXCLUDED",
+	MAYBE = "MAYBE",
+	BOTH = "BOTH",
+	BLACKLIST = "BLACKLIST",
+	SAVED_FOR_LATER = "SAVED_FOR_LATER",
+}
+
+export enum AssignStatus {
+	DRAFT = "DRAFT",
+	ASSIGNING = "ASSIGNING",
+	ASSIGNED = "ASSIGNED",
+	RUNNING = "RUNNING",
+	BLACKLIST = "BLACKLIST",
+	NOT_NOW = "NOT_NOW",
+	NO_REPLY = "NO_REPLY",
+	REPLIES = "REPLIES",
+	TO_BE_NURTURED = "TO_BE_NURTURED",
+	DO_NOT_CONTACT = "DO_NOT_CONTACT",
+	ENDED = "ENDED",
+	PAUSED = "PAUSED",
+}
+
+export enum AssignType {
+	CAMPAIGN = "CAMPAIGN",
+	PERSON = "PERSON",
+}
+
+export enum ListSourceType {
+	PROSPECT_SEARCH = "PROSPECT_SEARCH",
+	LI_EVENTS = "LI_EVENTS",
+	LI_PEOPLE = "LI_PEOPLE",
+	LI_COMPANY_ACTIVITY = "LI_COMPANY_ACTIVITY",
+	LI_PROFILE_VISITS = "LI_PROFILE_VISITS",
+	LI_PROFILE = "LI_PROFILE",
+	CUSTOM_EVENTS = "CUSTOM_EVENTS",
+	CSV_ENRICHMENTS = "CSV_ENRICHMENTS",
+	JOBS = "JOBS",
+	MAPS = "MAPS",
+	LI_POST = "LI_POST",
+}
+0;
+
+export enum ListType {
+	ONCE = "ONCE",
+	ON_GOING = "ON_GOING",
+}
+
+export enum SingleOrMultiSource {
+	SINGLE = "SINGLE",
+	MULTI = "MULTI",
+}
+
+export const ListSourcesWithAdditionalSources = [
+	ListSourceType.CSV_ENRICHMENTS,
+	ListSourceType.CUSTOM_EVENTS,
+	ListSourceType.LI_EVENTS,
+	ListSourceType.LI_PEOPLE,
+	ListSourceType.LI_COMPANY_ACTIVITY,
+	ListSourceType.JOBS,
+	ListSourceType.LI_PROFILE_VISITS,
+	ListSourceType.LI_PROFILE,
+	ListSourceType.MAPS,
+	ListSourceType.LI_POST,
+];
+
+export enum ListAction {
+	GENERAL = "GENERAL",
+	ADDED = "ADDED",
+	EXCLUDED = "EXCLUDED",
+}
+
+export enum CustomColumnTypes {
+	TEXT = "TEXT",
+	NUMBER = "NUMBER",
+	BOOLEAN = "BOOLEAN",
+	LINK = "LINK",
+	AI_PROMPT = "AI_PROMPT",
+	GOOGLE_NEWS = "GOOGLE_NEWS",
+	TECHNOLOGY = "TECHNOLOGY",
+	DEPARTMENT_SIZE = "DEPARTMENT_SIZE",
+	LINKEDIN_POST = "LINKEDIN_POST",
+	RANDOM_VALUE = "RANDOM_VALUE",
+	JOB_OFFER = "JOB_OFFER",
+}
+
+export enum CustomColumnFrequency {
+	ONCE = "ONCE",
+	WEEKLY = "WEEKLY",
+	MONTHLY = "MONTHLY",
+	QUATERLY = "QUATERLY",
+	HALFYEARLY = "HALFYEARLY",
+	YEARLY = "YEARLY",
+}
+
+export enum AiApplyType {
+	NONE = "NONE",
+	ALL = "ALL",
+	FIRST_10 = "FIRST_10",
+}
+
+export enum ListProcessingStatus {
+	IDLE = "IDLE",
+	ERROR = "ERROR",
+	PROCESSING = "PROCESSING",
+	DESKTOP_APP = "DESKTOP_APP",
+	API_WAITING = "API_WAITING",
+	WAITING = "WAITING",
+	DONE = "DONE",
+}
+
+export enum ResponseStatus {
+	DRAFT = "DRAFT",
+	INTERESTED = "INTERESTED",
+	NOT_INTERESTED = "NOT_INTERESTED",
+	SENT = "SENT",
+	OPENED = "OPENED",
+	CLICKED = "CLICKED",
+	REPLIED = "REPLIED",
+	BOUNCED = "BOUNCED",
+	UNSUBSCRIBED = "UNSUBSCRIBED",
+	LINKEDIN_VISIT = "LINKEDIN_VISIT",
+	LINKEDIN_INVITED = "LINKEDIN_INVITED",
+	LINKEDIN_INVITE_ACCEPTED = "LINKEDIN_INVITE_ACCEPTED",
+	NOT_NOW = "NOT_NOW",
+}
+
+export enum ReassignType {
+	CAMPAIGN = "CAMPAIGN",
+	LIST = "LIST",
+	PERSON = "PERSON",
+}

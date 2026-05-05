@@ -1,0 +1,28 @@
+export declare enum LiProfileVisitsType {
+    LIKE = "LIKE",
+    COMMENT = "COMMENT",
+    VISIT = "VISIT",
+    COMPANY_VISIT = "COMPANY_VISIT"
+}
+export declare enum LiProfileVisitsScrapeStatus {
+    DRAFT = "DRAFT",
+    IN_PROGRESS = "IN_PROGRESS",
+    DONE = "DONE"
+}
+export declare enum LiProfileVisitsResultScrapeStatus {
+    DRAFT = "DRAFT",
+    PUBLIC_PROFILE = "PUBLIC_PROFILE",
+    COMPANY_PROFILE = "COMPANY_PROFILE",
+    RETRY_COMPANY_PROFILE = "RETRY_COMPANY_PROFILE",
+    RETRY_PUBLIC_PROFILE = "RETRY_PUBLIC_PROFILE",
+    INVALID = "INVALID",
+    TRIGGERED = "TRIGGERED",
+    IN_PROGRESS = "IN_PROGRESS",
+    SCRAPED = "SCRAPED",
+    ERROR = "ERROR",
+    WAITING = "WAITING",
+    APOLLO_ENRICHED = "APOLLO_ENRICHED",
+    APOLLO_PERSON_ENRICHED = "APOLLO_PERSON_ENRICHED",
+    DONE = "DONE",
+    PERSON_FINDING = "PERSON_FINDING"
+}

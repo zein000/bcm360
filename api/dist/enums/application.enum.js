@@ -1,0 +1,40 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ApiApplications = exports.ScrapeApplications = void 0;
+var ScrapeApplications;
+(function (ScrapeApplications) {
+    ScrapeApplications["LINKEDIN"] = "LINKEDIN";
+    ScrapeApplications["NORTHDATA"] = "NORTHDATA";
+    ScrapeApplications["STEPSTONE"] = "STEPSTONE";
+    ScrapeApplications["INDEED"] = "INDEED";
+    ScrapeApplications["CRUNCHBASE"] = "CRUNCHBASE";
+    ScrapeApplications["SXWX"] = "SXWX";
+    ScrapeApplications["EVENT_TRANSFORM"] = "EVENT_TRANSFORM";
+    ScrapeApplications["CLEARBIT_API_KEY"] = "CLEARBIT_API_KEY";
+})(ScrapeApplications || (exports.ScrapeApplications = ScrapeApplications = {}));
+var ApiApplications;
+(function (ApiApplications) {
+    ApiApplications["APOLLO"] = "APOLLO";
+    ApiApplications["CLEAROUT"] = "CLEAROUT";
+    ApiApplications["CLEARBIT"] = "CLEARBIT";
+    ApiApplications["OPEN_AI"] = "OPEN_AI";
+    ApiApplications["ZERBOUNCE"] = "ZERBOUNCE";
+    ApiApplications["PROXY"] = "PROXY";
+    ApiApplications["GEONAMES"] = "GEONAMES";
+    ApiApplications["RAPIDAPI_LINKEDIN_DATA_SCRAPER"] = "RAPIDAPI_LINKEDIN_DATA_SCRAPER";
+    ApiApplications["RAPIDAPI_JSEARCH"] = "RAPIDAPI_JSEARCH";
+    ApiApplications["GENDERIZE"] = "GENDERIZE";
+    ApiApplications["JSEARCH"] = "JSEARCH";
+    ApiApplications["SERPER"] = "SERPER";
+    ApiApplications["ZENROWS"] = "ZENROWS";
+    ApiApplications["PERPLEXITY"] = "PERPLEXITY";
+    ApiApplications["RAPIDAPI_LOCAL_BUSINESS_DATA"] = "RAPIDAPI_LOCAL_BUSINESS_DATA";
+    ApiApplications["TAVILY"] = "TAVILY";
+    ApiApplications["RAPIDAPI_RT_LINKEDIN_DATA_SCRAPER_API"] = "RAPIDAPI_RT_LINKEDIN_DATA_SCRAPER_API";
+    ApiApplications["RAPIDAPI_FRESH_LINKEDIN_PROFILE_DATA"] = "RAPIDAPI_FRESH_LINKEDIN_PROFILE_DATA";
+    ApiApplications["RAPIDAPI_FRESH_LINKEDIN_PROFILE_DATA_STATUS"] = "RAPIDAPI_FRESH_LINKEDIN_PROFILE_DATA_STATUS";
+    ApiApplications["RAPIDAPI_FRESH_LINKEDIN_PROFILE_DATA_RESULTS"] = "RAPIDAPI_FRESH_LINKEDIN_PROFILE_DATA_RESULTS";
+    ApiApplications["RAPIDAPI_GOOGLE_NEWS"] = "RAPIDAPI_GOOGLE_NEWS";
+    ApiApplications["THEIRSTACK"] = "THEIRSTACK";
+})(ApiApplications || (exports.ApiApplications = ApiApplications = {}));
+//# sourceMappingURL=application.enum.js.map

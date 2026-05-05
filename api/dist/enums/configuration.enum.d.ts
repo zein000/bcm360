@@ -1,0 +1,6 @@
+export declare enum ConfigurationName {
+    APOLLO_API_KEY = "APOLLO_API_KEY",
+    LEMLIST_API_KEY = "LEMLIST_API_KEY",
+    HUBSPOT_API_KEY = "HUBSPOT_API_KEY",
+    CLEARBIT_API_KEY = "CLEARBIT_API_KEY"
+}

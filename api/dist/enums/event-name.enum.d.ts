@@ -1,0 +1,5 @@
+export declare enum EventName {
+    LOGIN = "LOGIN",
+    REGISTRATION = "REGISTRATION",
+    EMAIL_CONFIRMATION = "EMAIL_CONFIRMATION"
+}

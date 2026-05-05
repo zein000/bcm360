@@ -1,0 +1,9 @@
+export declare const generateNotFoundException: (entity: string) => never;
+export declare const generateServiceNotFoundException: () => never;
+export declare const generateDuplicateException: (entity: string) => never;
+export declare const unsupportedFileFormatException: () => never;
+export declare const incorrectFileFormatException: (formats: any) => never;
+export declare const generateUnauthorizedNamedException: (message: string) => never;
+export declare const generateUnauthorizedException: () => never;
+export declare const generateMissingParamsException: () => never;
+export declare const generateBadRequestException: (message: any) => never;

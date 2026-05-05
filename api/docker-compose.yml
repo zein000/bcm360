@@ -1,0 +1,68 @@
+
+services:
+  api-emergency-tool:
+    container_name: api-emergency-tool
+    image: api-emergency-tool
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    env_file:
+      - .env
+    ports:
+      - 3001:3001
+      - 9230:9230
+    volumes:
+      - .:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    restart: unless-stopped
+    depends_on:
+      - cache
+      - db
+  db:
+    image: mysql:8
+    restart: always
+    container_name: mysql-api-emergency-tool
+    environment:
+      MYSQL_DATABASE: "db"
+      MYSQL_USER: "user"
+      MYSQL_PASSWORD: "password"
+      MYSQL_ROOT_PASSWORD: "password"
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    volumes:
+      - db:/var/lib/mysql
+  cache:
+    image: redis:6.2-alpine
+    container_name: redis-api-emergency-tool
+    restart: always
+    command: /bin/sh -c "redis-server --requirepass $$REDIS_PASSWORD"
+    env_file:
+      - .env
+    ports:
+      - "6379:6379"
+    volumes:
+      - cache:/data
+  minio:
+    image: minio/minio:latest
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+    environment:
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: "!9nX.yhc3XNtfLjUeeQn"
+    command: server /data --console-address ":9001"
+
+networks:
+  minionetwork:
+    driver: bridge
+
+volumes:
+  db:
+  node_modules:
+  cache:
+  minio_data:
+    driver: local

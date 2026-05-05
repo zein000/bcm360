@@ -1,0 +1,1 @@
+{"version":3,"file":"general.enum.js","sourceRoot":"/","sources":["enums/general.enum.ts"],"names":[],"mappings":";;;AAAA,IAAY,aAGX;AAHD,WAAY,aAAa;IACxB,4BAAW,CAAA;IACX,8BAAa,CAAA;AACd,CAAC,EAHW,aAAa,6BAAb,aAAa,QAGxB","sourcesContent":["export enum SortOrderType {\r\n\tASC = \"ASC\",\r\n\tDESC = \"DESC\",\r\n}\r\n"]}

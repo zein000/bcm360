@@ -1,0 +1,1 @@
+{"version":3,"file":"http-response.dto.js","sourceRoot":"/","sources":["common/dto/http-response.dto.ts"],"names":[],"mappings":"","sourcesContent":["import { AxiosError } from \"axios\";\r\n\r\nexport type HttpResponseDTO<T> = { success: boolean; data?: T; error?: AxiosError };\r\n"]}

@@ -1,0 +1,9 @@
+export declare enum WorkflowStatus {
+    DRAFT = "DRAFT",
+    STARTED = "STARTED",
+    RUNNING = "RUNNING",
+    SEARCHING_FOR_LEADS = "SEARCHING_FOR_LEADS",
+    WAITING = "WAITING",
+    ERROR = "ERROR",
+    DONE = "DONE"
+}

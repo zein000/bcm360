@@ -1,0 +1,9 @@
+export declare enum PitchdeckStatus {
+    TODO = "TODO",
+    CONVERT_TO_IMAGE = "CONVERT_TO_IMAGE",
+    CONVERTED_TO_IMAGE = "CONVERTED_TO_IMAGE",
+    SUMMARIZE = "SUMMARIZE",
+    CHECK_DOMAIN = "CHECK_DOMAIN",
+    CHECK_APOLLO = "CHECK_APOLLO",
+    DONE = "DONE"
+}

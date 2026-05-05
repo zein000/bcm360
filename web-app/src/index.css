@@ -1,0 +1,379 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Urbanist";
+	src: url("assets/font/Urbanist-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Urbanist";
+	src: url("assets/font/Urbanist-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Urbanist";
+	src: url("assets/font/Urbanist-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Urbanist";
+	src: url("assets/font/Urbanist-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@layer base {
+	html {
+		height: 100vh;
+	}
+
+	body {
+		@apply text-[#1F2A37];
+		font-family: "Urbanist", sans-serif;
+	}
+
+	h1 {
+		@apply text-[34px] font-semibold text-gray-900 leading-[41px];
+	}
+
+	h2 {
+		@apply text-[24px] font-semibold leading-[32px]  text-gray-900;
+	}
+
+	h3 {
+		@apply text-[18px] font-semibold text-gray-900 leading-[21px];
+	}
+
+	h4 {
+		@apply text-sm font-semibold;
+	}
+
+	h6 {
+		@apply text-sm font-medium;
+	}
+
+	p {
+		@apply text-black-100;
+	}
+
+	.leftFirst {
+		left: 0px;
+		background: white;
+		z-index: 10;
+	}
+
+	.leftSecond {
+		left: 48px;
+		background: white;
+		z-index: 9;
+	}
+
+	.leftThird {
+		left: 64px;
+		background: white;
+		z-index: 8;
+	}
+
+	.leftFourth {
+		left: 214px;
+		background: white;
+		z-index: 7;
+	}
+
+	.leftFifth {
+		left: 250px;
+		background: white;
+		z-index: 6;
+		min-width: 212px;
+	}
+
+	.leftSixth {
+		left: 462px;
+		background: white;
+		z-index: 5;
+	}
+
+	.leftFifthReplies {
+		left: 250px;
+		background: white;
+		z-index: 6;
+		min-width: 100px;
+	}
+
+	.leftSixthReplies {
+		left: 350px;
+		background: white;
+		z-index: 5;
+	}
+
+	@screen sm {
+		h2 {
+			@apply text-[18px];
+		}
+	}
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	textarea:-webkit-autofill,
+	textarea:-webkit-autofill:hover,
+	textarea:-webkit-autofill:focus,
+	select:-webkit-autofill,
+	select:-webkit-autofill:hover,
+	select:-webkit-autofill:focus {
+		-webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+		-webkit-text-fill-color: #101828 !important;
+		background-color: transparent !important;
+	}
+}
+
+@layer components {
+	.bb-breadcrumbs {
+		@apply mb-4 text-xs text-gray-700;
+	}
+
+	.input-styles {
+		@apply block w-full text-gray-900 px-4 h-[48px] border border-solid border-gray-200 focus:border-brand-light hover:border-brand-light duration-200 rounded-xl text-ssm placeholder:text-placeholder focus:outline-none disabled:opacity-50 bg-white disabled:bg-white disabled:hover:border-gray-200 disabled:cursor-not-allowed;
+	}
+
+	.auth-input-styles {
+		@apply block w-full text-gray-900 px-4 h-[38px] shadow-mb-card md:shadow-none border-none md:border md:border-solid border-rb-light-gray focus:border-brand-light hover:border-brand-light duration-200 rounded-xl text-ssm placeholder:text-placeholder focus:outline-none disabled:opacity-50 bg-white disabled:bg-white disabled:hover:border-gray-200 disabled:cursor-not-allowed;
+	}
+
+	.label-styles {
+		@apply block mb-1 text-sm font-medium text-gray-900 appearance-none;
+	}
+
+	.bb-dashboard-layout {
+		@apply flex flex-col w-screen overflow-hidden lg:flex-row;
+	}
+
+	.bb-tableheader-link {
+		@apply text-xs font-semibold duration-200 cursor-pointer text-brand-light hover:text-blue-light;
+	}
+}
+
+@layer utilities {
+	.no-border-spacing {
+		border-spacing: 0;
+	}
+
+	.shadow-sm {
+		box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+	}
+	.shadow-full {
+		box-shadow: rgba(9, 105, 218, 0.5) 0 0 0 3px;
+	}
+
+	.shadow-all {
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+	}
+
+	.modal-styles {
+		/* overflow: auto; */
+		max-height: calc(100vh - 40px);
+		width: calc(100vw - 40px);
+	}
+
+	.custom-scrollbar {
+		scrollbar-gutter: stable;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-track {
+		background-color: #e3e3e3;
+		border-radius: 6px;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-thumb {
+		background-color: #959595;
+		border-radius: 6px;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+		background-color: #a0a0a0;
+	}
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("assets/font/Inter-Bold.eot");
+	src: url("assets/font/Inter-Bold.eot?#iefix") format("embedded-opentype"),
+		url("assets/font/Inter-Bold.woff2") format("woff2"),
+		url("assets/font/Inter-Bold.woff") format("woff"),
+		url("assets/font/Inter-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("assets/font/Inter-SemiBold.eot");
+	src: url("assets/font/Inter-SemiBold.eot?#iefix") format("embedded-opentype"),
+		url("assets/font/Inter-SemiBold.woff2") format("woff2"),
+		url("assets/font/Inter-SemiBold.woff") format("woff"),
+		url("assets/font/Inter-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("assets/font/Inter-Medium.eot");
+	src: url("assets/font/Inter-Medium.eot?#iefix") format("embedded-opentype"),
+		url("assets/font/Inter-Medium.woff2") format("woff2"),
+		url("assets/font/Inter-Medium.woff") format("woff"),
+		url("assets/font/Inter-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("assets/font/Inter-Regular.eot");
+	src: url("assets/font/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+		url("assets/font/Inter-Regular.woff2") format("woff2"),
+		url("assets/font/Inter-Regular.woff") format("woff"),
+		url("assets/font/Inter-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: "Inter", "Helvetica Neue", sans-serif;
+	overflow-x: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+body * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.Toastify__toast-theme--light {
+	border-radius: 8px;
+	padding: 0;
+}
+
+.Toastify__toast-body {
+	padding: 0;
+	margin: 0;
+	align-items: stretch;
+}
+
+.star-icon:hover {
+	color: "#009CA6";
+}
+
+.star-icon:hover .solid-icon {
+	display: block;
+}
+
+.star-icon:hover ~ .star-icon {
+	color: "#009CA6";
+}
+
+.star-icon:hover ~ .star-icon .solid-icon {
+	display: block;
+}
+
+.bb-payment-input iframe {
+	width: 100%;
+	max-height: 42px;
+}
+
+.exam-buttons:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -31px;
+	height: 30px;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+@page {
+	margin: 0;
+}
+
+.list-animation {
+	animation-duration: 2.5s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-name: courseListPlaceholder;
+	animation-timing-function: linear;
+	background: fff;
+	background: linear-gradient(to right, #f1f1f1 3%, #f9f9f9 48%, #f1f1f1 83%);
+	-webkit-backface-visibility: hidden;
+}
+
+@keyframes courseListPlaceholder {
+	0% {
+		background-position: 0px 0;
+	}
+	100% {
+		background-position: 1000px 0;
+	}
+}
+
+.bb-scrollbar::-webkit-scrollbar,
+.bb-scrollbar-darker::-webkit-scrollbar {
+	width: 8px;
+}
+
+.bb-scrollbar::-webkit-scrollbar-thumb {
+	background: transparent;
+}
+
+.bb-scrollbar:hover::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+}
+
+.bb-scrollbar-darker::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+/** table sorter **/
+.bb-order-ASC .sorter-t,
+.bb-order-DESC .sorter-b,
+.bb-order-ACTIVE .sorter-t,
+.bb-order-TRIAL .sorter-b,
+.bb-order-INACTIVE .sorter-t {
+	stroke: #646b76 !important;
+}
+
+#root {
+	white-space: pre-line;
+}
+
+.MuiTablePagination-select {
+	margin-top: 12px !important;
+}
+
+.MuiTablePagination-selectIcon {
+	margin-top: 3px !important;
+}
+
+/* #sentry-feedback {
+    --trigger-background: #cccccc;
+    bottom: 0;
+    left: 20px;
+  } */

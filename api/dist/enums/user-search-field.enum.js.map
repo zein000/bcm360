@@ -1,0 +1,1 @@
+{"version":3,"file":"user-search-field.enum.js","sourceRoot":"/","sources":["enums/user-search-field.enum.ts"],"names":[],"mappings":";;;AAAA,IAAY,eAIX;AAJD,WAAY,eAAe;IAC1B,kCAAe,CAAA;IACf,gCAAa,CAAA;IACb,gCAAa,CAAA;AACd,CAAC,EAJW,eAAe,+BAAf,eAAe,QAI1B","sourcesContent":["export enum UserSearchField {\r\n\tEMAIL = \"email\",\r\n\tNAME = \"name\",\r\n\tROLE = \"role\",\r\n}\r\n"]}

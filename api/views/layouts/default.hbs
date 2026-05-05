@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+		<style>
+			body, table, td, p, a, h1, h2, h3, h4, h5, h6 {
+				font-family: 'Urbanist', Arial, sans-serif !important;
+			}
+		</style>
+	</head>
+	<body style="padding: 16px; background-color: #F7F8FB;">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td align="center">
+					<!-- Header -->
+					{{> header }}
+
+					<!-- Main Content Container -->
+					<table
+						width="568"
+						cellpadding="0"
+						cellspacing="0"
+						style="background: linear-gradient(to left bottom, #4680FC60 0%, #4680FC45 5%, #4680FC30 10%, #4680FC15 20%, #FFFFFF 25%); 
+						backdrop-filter: blur(240px); border-radius: 20px; text-align: center; 
+						border: 1px solid #E6E6EC; box-shadow: 0px 1px 2px 0px #1C274C1F; 
+						font-family: 'Urbanist', Arial, sans-serif !important;"
+					>
+						<tr width="100%">
+							<td align="left" width="100%" style="padding: 40px;">
+								<table
+									width="44"
+									height="44"
+									cellspacing="0"
+									cellpadding="0"
+									style="border-radius: 11px; margin-bottom: 12px; background-color: #FFFFFF; border: 0.28px solid #E6E6EC; box-shadow: 0px 1.38px 2.75px 0px #1018280F, 0px 1.38px 4.13px 0px #1018281A;"
+								>
+									<tr>
+										<td align="center">
+											<img
+												src="https://crisis-dev.nbg1.your-objectstorage.com/crisis-dev/logo.png"
+												alt="Invitation"
+												width="38"
+												height="15"
+												style="display: block;"
+											/>
+										</td>
+									</tr>
+								</table>
+								<!-- Body -->
+								{{{body}}}
+								<table
+									width="100%"
+									cellspacing="0"
+									cellpadding="0"
+									style="margin-top: 40px; padding-top: 40px; border-top: 1px solid #E6E6EC;"
+								>
+									<tr>
+										<td align="left">
+											<p
+												style="margin: 0; margin-bottom: 6px; padding: 0; color: #1D243C; font-weight: bold; font-size: 16px;"
+											>Mit freundlichen Grüßen,</p>
+											<p style="padding: 0; margin: 0; color: #626373; font-size: 14px;">Das BCM360-Team!</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+					<!-- Footer -->
+					{{> footer }}
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

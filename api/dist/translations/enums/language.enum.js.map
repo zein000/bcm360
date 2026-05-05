@@ -1,0 +1,1 @@
+{"version":3,"file":"language.enum.js","sourceRoot":"/","sources":["translations/enums/language.enum.ts"],"names":[],"mappings":";;;AAAA,IAAY,QAGX;AAHD,WAAY,QAAQ;IACnB,qBAAS,CAAA;IACT,qBAAS,CAAA;AACV,CAAC,EAHW,QAAQ,wBAAR,QAAQ,QAGnB","sourcesContent":["export enum Language {\r\n\tEN = \"en\",\r\n\tDE = \"de\",\r\n}\r\n"]}

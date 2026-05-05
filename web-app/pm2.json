@@ -1,0 +1,9 @@
+{
+	"apps": [
+		{
+			"name": "prod",
+			"script": "npm",
+			"args": "run start:prod"
+		}
+	]
+}

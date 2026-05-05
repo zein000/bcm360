@@ -1,0 +1,58 @@
+export enum JobScrapeStatus {
+	DRAFT = "DRAFT",
+	SCRAPED = "SCRAPED",
+	VALIDATED = "VALIDATED",
+	INVALID = "INVALID",
+	COMPANY_NAME = "COMPANY_NAME",
+	APOLLO_ENRICHED = "APOLLO_ENRICHED",
+}
+
+export enum JobsScrapeStatus {
+	DRAFT = "DRAFT",
+	TRIGGERED = "TRIGGERED",
+	IN_PROGRESS = "IN_PROGRESS",
+	DONE = "DONE",
+	ERROR = "ERROR",
+}
+
+export enum MapScrapeStatus {
+	DRAFT = "DRAFT",
+	SCRAPED = "SCRAPED",
+	VALIDATED = "VALIDATED",
+	INVALID = "INVALID",
+	COMPANY_NAME = "COMPANY_NAME",
+	APOLLO_ENRICHED = "APOLLO_ENRICHED",
+}
+
+export enum MapsScrapeStatus {
+	DRAFT = "DRAFT",
+	TRIGGERED = "TRIGGERED",
+	IN_PROGRESS = "IN_PROGRESS",
+	DONE = "DONE",
+	ERROR = "ERROR",
+}
+
+export enum LiEventsScrapeStatus {
+	DRAFT = "DRAFT",
+	TRIGGERED = "TRIGGERED",
+	IN_PROGRESS = "IN_PROGRESS",
+	SCRAPED = "SCRAPED",
+	ERROR = "ERROR",
+	WAITING = "WAITING",
+	DONE = "DONE",
+}
+
+export enum LiEventScrapeStatus {
+	DRAFT = "DRAFT",
+	TRIGGERED = "TRIGGERED",
+	IN_PROGRESS = "IN_PROGRESS",
+	SCRAPED = "SCRAPED",
+	ERROR = "ERROR",
+	WAITING = "WAITING",
+	DONE = "DONE",
+}
+
+export enum LiEventLocationType {
+	ONLINE = "ONLINE",
+	OFFLINE = "OFFLINE",
+}

@@ -1,0 +1,4 @@
+export enum TokenPurpose {
+	INVITATION = "INVITATION",
+	FORGOTTEN_PASSWORD = "FORGOTTEN_PASSWORD",
+}

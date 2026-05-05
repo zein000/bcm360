@@ -1,0 +1,1 @@
+{"version":3,"file":"tracker.enum.js","sourceRoot":"/","sources":["enums/tracker.enum.ts"],"names":[],"mappings":";;;AAAA,IAAY,iBAIX;AAJD,WAAY,iBAAiB;IAC5B,kCAAa,CAAA;IACb,kCAAa,CAAA;IACb,oCAAe,CAAA;AAChB,CAAC,EAJW,iBAAiB,iCAAjB,iBAAiB,QAI5B","sourcesContent":["export enum TrackerSourceType {\r\n\tLIST = \"LIST\",\r\n\tXLSX = \"XLSX\",\r\n\tEMPTY = \"EMPTY\",\r\n}\r\n"]}

@@ -1,0 +1,35 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Errors = void 0;
+var Errors;
+(function (Errors) {
+    Errors["WEAK_PASSWORD"] = "WEAK_PASSWORD";
+    Errors["PASSWORD_MISMATCH"] = "PASSWORD_MISMATCH";
+    Errors["INVALID_PASSWORD"] = "INVALID_PASSWORD";
+    Errors["INTERNAL_ERROR"] = "INTERNAL_ERROR";
+    Errors["INVALID_CREDENTIALS"] = "INVALID_CREDENTIALS";
+    Errors["INVALID_TOKEN"] = "INVALID_TOKEN";
+    Errors["USER_NOT_FOUND"] = "USER_NOT_FOUND";
+    Errors["USER_ALREADY_EXISTS"] = "USER_ALREADY_EXISTS";
+    Errors["ALREADY_EXISTS"] = "ALREADY_EXISTS";
+    Errors["EMAIL_ALREADY_TAKEN"] = "EMAIL_ALREADY_TAKEN";
+    Errors["INVALID_REQUEST_DATA"] = "INVALID_REQUEST_DATA";
+    Errors["INVALID_PARAMETER"] = "INVALID_PARAMETER";
+    Errors["NOT_FOUND"] = "NOT_FOUND";
+    Errors["BATCH_NOT_FOUND"] = "BATCH_NOT_FOUND";
+    Errors["TRANSACTION_NOT_FOUND"] = "TRANSACTION_NOT_FOUND";
+    Errors["EMAIL_NOT_SENT"] = "EMAIL_NOT_SENT";
+    Errors["INVALID_OTP"] = "INVALID_OTP";
+    Errors["OTP_MAX_ATTEMPTS"] = "OTP_MAX_ATTEMPTS";
+    Errors["ADDRESS_MISSING"] = "ADDRESS_MISSING";
+    Errors["IMAGE_CONVERSION"] = "IMAGE_CONVERSION";
+    Errors["IMAGE_UPLOAD"] = "IMAGE_UPLOAD";
+    Errors["STRIPE_ERROR"] = "STRIPE_ERROR";
+    Errors["JWT_ALREADY_BLACKLISTED"] = "JWT_ALREADY_BLACKLISTED";
+    Errors["INVALID_OTP_AUTH_CODE"] = "INVALID_OTP_AUTH_CODE";
+    Errors["FORBIDDEN"] = "FORBIDDEN";
+    Errors["CUSTOM_COLUMN_ALREADY_EXISTS"] = "CUSTOM_COLUMN_ALREADY_EXISTS";
+    Errors["ASSIGNMENT_FAILED"] = "ASSIGNMENT_FAILED";
+    Errors["NOT_ENOUGH_CREDITS"] = "NOT_ENOUGH_CREDITS";
+})(Errors || (exports.Errors = Errors = {}));
+//# sourceMappingURL=errors.enum.js.map

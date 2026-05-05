@@ -1,0 +1,65 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ScrapeJobType = exports.NorthdataScrapeStatus = exports.JobsScrapeStatus = exports.JobScrapeStatus = void 0;
+var JobScrapeStatus;
+(function (JobScrapeStatus) {
+    JobScrapeStatus["DRAFT"] = "DRAFT";
+    JobScrapeStatus["SCRAPED"] = "SCRAPED";
+    JobScrapeStatus["VALIDATED"] = "VALIDATED";
+    JobScrapeStatus["ERROR"] = "ERROR";
+    JobScrapeStatus["RUNNING"] = "RUNNING";
+    JobScrapeStatus["ENRICHED"] = "ENRICHED";
+    JobScrapeStatus["INVALID"] = "INVALID";
+    JobScrapeStatus["WAITING"] = "WAITING";
+    JobScrapeStatus["COMPANY_NAME"] = "COMPANY_NAME";
+    JobScrapeStatus["APOLLO_ENRICHED"] = "APOLLO_ENRICHED";
+})(JobScrapeStatus || (exports.JobScrapeStatus = JobScrapeStatus = {}));
+var JobsScrapeStatus;
+(function (JobsScrapeStatus) {
+    JobsScrapeStatus["DRAFT"] = "DRAFT";
+    JobsScrapeStatus["TRIGGERED"] = "TRIGGERED";
+    JobsScrapeStatus["IN_PROGRESS"] = "IN_PROGRESS";
+    JobsScrapeStatus["WAITING"] = "WAITING";
+    JobsScrapeStatus["DONE"] = "DONE";
+    JobsScrapeStatus["ERROR"] = "ERROR";
+    JobsScrapeStatus["PERSON_FINDING"] = "PERSON_FINDING";
+})(JobsScrapeStatus || (exports.JobsScrapeStatus = JobsScrapeStatus = {}));
+var NorthdataScrapeStatus;
+(function (NorthdataScrapeStatus) {
+    NorthdataScrapeStatus["DRAFT"] = "DRAFT";
+    NorthdataScrapeStatus["SCRAPED"] = "SCRAPED";
+    NorthdataScrapeStatus["VALIDATED"] = "VALIDATED";
+    NorthdataScrapeStatus["RUNNING"] = "RUNNING";
+    NorthdataScrapeStatus["ENRICHED"] = "ENRICHED";
+    NorthdataScrapeStatus["INVALID"] = "INVALID";
+    NorthdataScrapeStatus["WAITING"] = "WAITING";
+    NorthdataScrapeStatus["COMPANY_NAME"] = "COMPANY_NAME";
+    NorthdataScrapeStatus["COMPANY_INVALID"] = "COMPANY_INVALID";
+    NorthdataScrapeStatus["APOLLO_NOT_FOUND"] = "APOLLO_NOT_FOUND";
+    NorthdataScrapeStatus["APOLLO_ENRICHED"] = "APOLLO_ENRICHED";
+    NorthdataScrapeStatus["ERROR"] = "ERROR";
+})(NorthdataScrapeStatus || (exports.NorthdataScrapeStatus = NorthdataScrapeStatus = {}));
+var ScrapeJobType;
+(function (ScrapeJobType) {
+    ScrapeJobType["LINKEDIN_EVENT"] = "LINKEDIN_EVENT";
+    ScrapeJobType["LINKEDIN_EVENTS"] = "LINKEDIN_EVENTS";
+    ScrapeJobType["LINKEDIN_PROFILE"] = "LINKEDIN_PROFILE";
+    ScrapeJobType["LINKEDIN_PROFILE_FROM_CSV"] = "LINKEDIN_PROFILE_FROM_CSV";
+    ScrapeJobType["FIND_PEOPLE_IN_COMPANY"] = "FIND_PEOPLE_IN_COMPANY";
+    ScrapeJobType["LINKEDIN_PEOPLE"] = "LINKEDIN_PEOPLE";
+    ScrapeJobType["LINKEDIN_PEOPLE_SEARCH"] = "LINKEDIN_PEOPLE_SEARCH";
+    ScrapeJobType["LINKEDIN_COMPANY"] = "LINKEDIN_COMPANY";
+    ScrapeJobType["LINKEDIN_COMPANY_ACTIVITY"] = "LINKEDIN_COMPANY_ACTIVITY";
+    ScrapeJobType["LINKEDIN_COMPANY_ACTIVITY_FOLLOWER"] = "LINKEDIN_COMPANY_ACTIVITY_FOLLOWER";
+    ScrapeJobType["LINKEDIN_PROFILE_VISITS"] = "LINKEDIN_PROFILE_VISITS";
+    ScrapeJobType["LINKEDIN_PROFILE_POSTS"] = "LINKEDIN_PROFILE_POSTS";
+    ScrapeJobType["LINKEDIN_PROFILE_COMMENTS"] = "LINKEDIN_PROFILE_COMMENTS";
+    ScrapeJobType["LINKEDIN_PROFILE_LIKES_TO_POST"] = "LINKEDIN_PROFILE_LIKES_TO_POST";
+    ScrapeJobType["LINKEDIN_PROFILE_LIKES_TO_COMMENT"] = "LINKEDIN_PROFILE_LIKES_TO_COMMENT";
+    ScrapeJobType["LINKEDIN_PROFILE_COMMENTS_TO_POST"] = "LINKEDIN_PROFILE_COMMENTS_TO_POST";
+    ScrapeJobType["NORTHDATA"] = "NORTHDATA";
+    ScrapeJobType["LINKEDIN_CONNECTION_REQUESTS"] = "LINKEDIN_CONNECTION_REQUESTS";
+    ScrapeJobType["LINKEDIN_COMPANY_INVITATIONS"] = "LINKEDIN_COMPANY_INVITATIONS";
+    ScrapeJobType["LINKEDIN_CONNECTIONS"] = "LINKEDIN_CONNECTIONS";
+})(ScrapeJobType || (exports.ScrapeJobType = ScrapeJobType = {}));
+//# sourceMappingURL=job-scrape.enum.js.map

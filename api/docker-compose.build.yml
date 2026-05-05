@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  api-emergency-tool:
+    container_name: api-emergency-tool
+    image: browserbiteood/crisis:latest
+    pull_policy: always
+    command: npm run start:prod:db
+    env_file:
+      - .env
+    networks:
+      - app-network
+    ports:
+      - 3001:3001
+      - 4001:4001
+      - 9229:9229
+    restart: unless-stopped
+    depends_on:
+      - cache
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./deployment/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - api-emergency-tool
+    networks:
+      - app-network
+  cache:
+    image: redis:6.2-alpine
+    container_name: redis-api-emergency-tool
+    restart: always
+    command: /bin/sh -c "redis-server --requirepass $$REDIS_PASSWORD"
+    env_file:
+      - .env
+    ports:
+      - "6379:6379"
+    volumes:
+      - cache:/data
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  cache:

@@ -1,0 +1,1 @@
+{"version":3,"file":"deep-partial.type.js","sourceRoot":"/","sources":["common/types/deep-partial.type.ts"],"names":[],"mappings":"","sourcesContent":["export type DeepPartial<T> = {\r\n\t[K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];\r\n};\r\n"]}

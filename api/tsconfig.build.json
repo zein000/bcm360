@@ -1,0 +1,13 @@
+{
+	"extends": "./tsconfig.json",
+	"exclude": [
+		"node_modules",
+		"test",
+		"dist",
+		"**/*spec.ts",
+		"migrations",
+		"typeOrm.migrations.config.ts",
+		"commitlint.config.js",
+		"coverage/*"
+	]
+}

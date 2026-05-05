@@ -1,0 +1,36 @@
+export interface CsvExport {
+	name: string;
+	email: string;
+	firstName: string;
+	lastName: string;
+	gender: string;
+	genderProbability: number;
+	genderEN: string;
+	language: string;
+	seniority: string;
+	linkedinUrl: string;
+	headline: string;
+	title: string;
+	city: string;
+	country: string;
+	companyName: string;
+	founded: string;
+	estimatedNumEmployees: string;
+	companyCity: string;
+	companyCountry: string;
+	industryApollo: string;
+	industry: string;
+	currentPositions: number;
+	enrichmentStatus: string;
+	emailStatus: string;
+	needsToBeChecked: string;
+	reason: string;
+	connectionsCount: number;
+	connections: string;
+	amountInOtherApolloSearch?: string | null;
+	blacklistType?: string | null;
+	otherLists?: string | null;
+	otherEvents?: string | null;
+	currentEvents?: string | null;
+	jobs?: string | null;
+}
